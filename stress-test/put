@@ -1,0 +1,6 @@
+put
+{
+        "uri" : "myorg://users/test",
+        "name": "Test",
+        "notes": ["Note1","Note2"]
+}
