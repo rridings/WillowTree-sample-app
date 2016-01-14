@@ -96,10 +96,10 @@ public class AssetController
       response.type("application/json");
     });
 
-    exception(IllegalArgumentException.class, (e, request, response) -> 
+    exception(Exception.class, (e, request, response) -> 
     {
-      log.error(Thread.currentThread().getId() + " - " + e.getMessage());
-      
+      log.error(Thread.currentThread().getId() + " - " + e.getClass().getName() + " - message:");
+
       response.status(400);
       response.body(gson.toJson(new Response(e)));
     });
