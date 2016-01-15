@@ -16,6 +16,9 @@ The project is a maven project.  Clone the respository and run mvn package.  The
 * The run script launches the application in the foreground.  If you want to run it in the background add & to the end of the line.
 To stop the background you will have to use something like KILL.  The is no shutdown command built into the application.
 
+**Integration and Unit Testing**
+In the src-test directory are JUnit tests the exercise each component, AssetController, AssetService and AssetDAOMemoryImpl.  Each test fires up the server, runs the test, and shuts down the server.  When running the tests, make sure the Sample App server is not running. Maven also runs these tests during packaging.
+
 **Stress Testing**  
 
 There are two scripts, stress-read.sh and stress-write.sh.  They are using Apache Bench to call the sample application.
