@@ -1,5 +1,4 @@
 # WillowTree-sample-app
-**WillowTree sample app**
 
 Sample_App.pdf includes Architecture and Design description, API definitions and Stress
 Test results and analysis.
