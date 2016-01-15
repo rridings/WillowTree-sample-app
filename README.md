@@ -17,7 +17,7 @@ The project is a maven project.  Clone the respository and run mvn package.  The
 To stop the background proces, you will have to use something like KILL.  There is no shutdown command built into the application.
 
 **Integration and Unit Testing**  
-In the src-test directory are JUnit tests that exercise each component; AssetController, AssetService and AssetDAOMemoryImpl.  Each test fires up the server, runs the test, and shuts down the server.  When running the tests, make sure the server is not running. Maven also runs these tests during packaging.
+In the src/test directory are JUnit tests that exercise each component; AssetController, AssetService and AssetDAOMemoryImpl.  Each test fires up the server, runs the test, and shuts down the server.  When running the tests, make sure the server is not running. Maven also runs these tests during packaging.
 
 **Stress Testing**  
 There are two stress test scripts, stress-read.sh and stress-write.sh.  They are using Apache Bench to call the sample application.  In the scripts change the path to Apache Bench (ab) to your local installation.
